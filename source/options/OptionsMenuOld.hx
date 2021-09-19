@@ -1,3 +1,4 @@
+/*
 package options;
 
 import flash.text.TextField;
@@ -12,7 +13,7 @@ import WebViewVideo;
 
 import flixel.util.FlxSave;
 
-class OptionsMenu extends MusicBeatState
+class OptionsMenuOld extends MusicBeatState
 {
 	var selector:FlxText;
 	var curSelected:Int = 0;
@@ -141,10 +142,6 @@ class OptionsMenu extends MusicBeatState
 
 	function changeSelection(change:Int = 0)
 	{
-		/* #if !switch
-		NGio.logEvent('Fresh');
-		#end
-		*/
 		FlxG.sound.play(Paths.sound('scrollMenu'), 0.4);
 
 		curSelected += change;
@@ -197,3 +194,4 @@ class OptionsMenu extends MusicBeatState
 			super.closeSubState();
 		}	
 }
+*/
