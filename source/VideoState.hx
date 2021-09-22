@@ -1,3 +1,4 @@
+/*
 package;
 
 import MusicBeatState;
@@ -50,3 +51,4 @@ class VideoState extends MusicBeatState {
         }
     }
 }
+*/

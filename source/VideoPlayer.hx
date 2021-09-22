@@ -1,3 +1,4 @@
+/*
 package;
 
 import flixel.system.FlxSound;
@@ -17,15 +18,15 @@ import flixel.FlxSprite;
 import flixel.FlxG;
 import flixel.util.FlxPath;
 
-/**-200 -200
-    usage:
-    var video = new VideoPlayer(0, 0, 'videos/ughintro.webm');
-    video.play();
-    add(video);
+//-200 -200
+//    usage:
+//    var video = new VideoPlayer(0, 0, 'videos/ughintro.webm');
+//    video.play();
+//    add(video);
+//
+//    - Bitstream not supported by this decoder
+//    maybe use vp8 (idk)
 
-    - Bitstream not supported by this decoder
-    maybe use vp8 (idk)
-**/
 using StringTools;
 
 class VideoPlayer extends FlxSprite {
@@ -143,3 +144,4 @@ class VideoPlayer extends FlxSprite {
         #end
     }
 }
+#end

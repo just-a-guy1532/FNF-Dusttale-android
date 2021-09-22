@@ -7,9 +7,9 @@ import openfl.ui.Keyboard;
 import openfl.events.KeyboardEvent;
 import Replay.Ana;
 import Replay.Analysis;
-#if cpp
+/*#if cpp
 import webm.WebmPlayer;
-#end
+#end*/
 import flixel.input.keyboard.FlxKey;
 import haxe.Exception;
 import openfl.geom.Matrix;
@@ -65,7 +65,9 @@ import lime.utils.Assets;
 import openfl.display.BlendMode;
 import openfl.display.StageQuality;
 import openfl.filters.ShaderFilter;
+#if mobileC
 import ui.Mobilecontrols;
+#end
 #if windows
 import Discord.DiscordClient;
 #end
