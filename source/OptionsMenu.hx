@@ -26,14 +26,16 @@ class OptionsMenu extends MusicBeatState
 
 	var options:Array<OptionCategory> = [
 		new OptionCategory("Gameplay", [
+			#if mobileC
 			new CustomControls("Edit a mobile controls..."),
+			#end
 			new DFJKOption(controls),
 			new DownscrollOption("Change the layout of the strumline."),
 			new GhostTapOption("Ghost Tapping is when you tap a direction and it doesn't give you a miss."),
 			new Judgement("Customize your Hit Timings. (LEFT or RIGHT)"),
-			/*#if desktop
+			#if desktop
 			new FPSCapOption("Cap your FPS"),
-			#end*/
+			#end
 			new ScrollSpeedOption("Change your scroll speed. (1 = Chart dependent)"),
 			new AccuracyDOption("Change how accuracy is calculated. (Accurate = Simple, Complex = Milisecond Based)"),
 			new ResetButtonOption("Toggle pressing R to gameover."),
@@ -43,19 +45,21 @@ class OptionsMenu extends MusicBeatState
 		new OptionCategory("Appearance", [
 			new DistractionsAndEffectsOption("Toggle stage distractions that can hinder your gameplay."),
 			new CamZoomOption("Toggle the camera zoom in-game."),
-			//#if desktop
-			//new RainbowFPSOption("Make the FPS Counter Rainbow"),
+			#if desktop
+			new RainbowFPSOption("Make the FPS Counter Rainbow"),
+			#end
 			new AccuracyOption("Display accuracy information."),
 			new NPSDisplayOption("Shows your current Notes Per Second."),
 			new SongPositionOption("Show the songs current position. (as a bar)"),
-			//new CpuStrums("CPU's strumline lights up when a note hits it."),
-			//#end
+			#if desktop
+			new CpuStrums("CPU's strumline lights up when a note hits it."),
+			#end
 		]),
 		new OptionCategory("Misc", [
-			/*#if desktop
+			#if desktop
 			new FPSOption("Toggle the FPS Counter"),
 			new ReplayOption("View replays"),
-			#end*/
+			#end
 			new FlashingLightsOption("Toggle flashing lights that can cause epileptic seizures and strain."),
 			new WatermarkOption("Enable and disable all watermarks from the engine."),
 			new ScoreScreen("Show the score screen after the end of a song."),

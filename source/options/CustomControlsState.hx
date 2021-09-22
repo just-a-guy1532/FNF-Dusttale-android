@@ -1,3 +1,4 @@
+#if mobileC
 package options;
 
 import flixel.ui.FlxButton;
@@ -418,3 +419,4 @@ class CustomControlsState extends MusicBeatSubstate
 		super.destroy();
 	}
 }
+#end

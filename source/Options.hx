@@ -95,6 +95,8 @@ class DFJKOption extends Option
 		return "Key Bindings";
 	}
 }
+
+#if mobileC
 class CustomControls extends Option
 {
 	public function new(desc:String)
@@ -113,6 +115,8 @@ class CustomControls extends Option
 	}
 
 }
+#end
+
 class About extends Option
 {
 	public function new(desc:String)
@@ -129,8 +133,8 @@ class About extends Option
 	{
 		return "About";
 	}
-
 }
+
 class CpuStrums extends Option
 {
 	public function new(desc:String)

@@ -55,17 +55,9 @@ class AboutState extends MusicBeatState
 		super.update(elapsed);
 
 		if (FlxG.sound.music.volume < 0.7)
-		{
 			FlxG.sound.music.volume += 0.5 * FlxG.elapsed;
-		}
 
-		#if android
-		if (FlxG.android.justReleased.BACK)
-		{
+		if (controls.ACCEPT || controls.BACK #if android || FlxG.android.justReleased.BACK #end)
 			FlxG.switchState(new OptionsMenu());
-		}
-		#end
-
 	}
-
 }

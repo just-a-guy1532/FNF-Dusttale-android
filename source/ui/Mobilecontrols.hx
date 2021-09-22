@@ -1,3 +1,4 @@
+#if mobileC
 package ui;
 
 import flixel.FlxG;
@@ -82,3 +83,4 @@ enum ControlsGroup {
 	VIRTUALPAD_CUSTOM;
 	HITBOX;
 }
+#end
