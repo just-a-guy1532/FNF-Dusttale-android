@@ -95,7 +95,7 @@
 	<assets path="plugins/" rename='' if="windows"/>
 	<assets path="dlls/" rename='' if="windows"/>
 
-	<assets path='example_mods' rename='mods' embed='false'/>
+	<!-- <assets path='example_mods' rename='mods' embed='false'/> -->
 	<assets path='art/readme.txt' rename='do NOT readme.txt' />
 	<assets path='LICENSE' rename='LICENSE.txt' />
 	<!-- <template path='mods' /> -->
@@ -117,14 +117,14 @@
 	<haxelib name="flixel-addons" />
 	<haxelib name="hscript" />
 
-	<haxelib name="actuate" />
-	<haxelib name="extension-webm"/> <!-- Make sure to use https://github.com/KadeDev/extension-webm/ -->
+	<!-- <haxelib name="actuate" /> -->
+	<!-- <haxelib name="extension-webm"/> --><!-- Make sure to use https://github.com/KadeDev/extension-webm/ -->
 
 	<!--In case you want to use the ui package-->
 	<haxelib name="flixel-ui" />
 	<haxelib name="newgrounds" unless="mobile"/>
 	<haxelib name="faxe" if='switch'/>
-	<haxelib name="polymod"/>
+	<!-- <haxelib name="polymod"/> -->
 	<haxelib name="discord_rpc" if="windows"/>
 	<haxelib name="linc_luajit" if="windows"/>
 
